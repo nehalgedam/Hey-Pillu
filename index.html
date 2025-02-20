@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Miss You </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            overflow: hidden;
+            margin: 0;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            padding: 10px;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+            text-shadow: 3px 3px 15px white;
+            animation: glow 1.5s infinite alternate, bounce 2s infinite, rotate-once 3s linear 1;
+        }
+        @keyframes glow {
+            0% { text-shadow: 3px 3px 20px white; }
+            100% { text-shadow: 3px 3px 30px red; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -45%) scale(1.3); }
+        }
+        @keyframes rotate-once {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">I am sorry pillu ❤ I miss you so much Devyani 😘💖💞</div>
+    </div>
+</body>
+</html>
